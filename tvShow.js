@@ -86,6 +86,7 @@ const showOfficialSite = (result)=>{
     const span = document.createElement('span');
     if(result.show.officialSite){
         a.href = result.show.officialSite;
+        a.target = "_blank";
         a.innerText = "Officialsite";
         return a;
     }else{
